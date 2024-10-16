@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="https://icons.veryicon.com/png/o/application/third-party-icon/honor-of-kings-fill-1.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen bg-zinc-700">
+    <div class="w-full h-screen bg-zinc-800 flex" id="main">
+        <div class=" w-full absolute flex justify-between px-20 text-xl bg-white " id="nav">
+            <div class="flex gap-2" id="leftnav"><i class=" hover:font-bold ri-honor-of-kings-fill text-end text-3xl text-green-600 "></i>&#124; <h1 class="hover:font-bold cursor-pointer" onclick="location.href='/'">CodeCraft</h1></div>
+            <div class="flex gap-6 text-zinc-950  " id="rightnav"> 
+                <a class="hover:font-bold" href="/">Home</a> 
+                <a class="hover:font-bold" href="/">Courses</a> 
+                <!-- <a class="hover:font-bold" href="/campus.html">Campus Ambassdor</a>  -->
+                <a class="hover:font-bold" href="/about">about</a> 
+                <a class="hover:font-bold" href="/contact">Contact us</a>
+            </div>
+            <div>
+                <button class="hover:font-bold" onclick="location.href='/login'">Sign in</button>
+                &#124;
+                <button class="hover:font-bold" onclick="location.href='/signup'">Sign up</button>
+             </div>
+        </div>
+    <div class="p-10 left-1/3  absolute ">
+        <h1 class="font-bold mb-4 text-white text-center">Login user</h1>
+    <form class="flex flex-col w-40 justify-center text-white" action="/login" method="post">
+        
+        <label for="email">Email</label>
+        <input class="px-2 border-2 bg-transparent border-slate-300"  type="email" placeholder="email" name="email">
+        <br>
+        <label for="password">Password</label>
+        <input class="px-2 border-2 bg-transparent " type="password" placeholder="password" name="password">
+        <input class="cursor-pointer px-2 rounded-md bg-blue-700 text-white mt-5" type="submit"  value="Login">
+        <input class="cursor-pointer px-2 rounded-md bg-blue-700 text-white mt-5" type="button" onclick="location.href='/signup'" value="Sign up">
+    </form>
+</div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
